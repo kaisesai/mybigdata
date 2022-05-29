@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0be1ba-6593-427c-add1-e4fc4caef0bc" name="Changes" comment="feat: hdfs, mapreduce api 操作">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liukai/hdfs/MyHdfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapred-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/yarn-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,13 +63,14 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyHdfs.delete">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liukai.Main" />
+  <component name="RunManager" selected="Application.com.liukai.mapreduce.WordCount">
+    <configuration name="com.liukai.mapreduce.WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liukai.mapreduce.WordCount" />
       <module name="mybigdata" />
+      <option name="PROGRAM_PARAMETERS" value="-D a=123 input outputargs1 -Dbbb=333 -Dmapreduce.framework.name=yarn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liukai.*" />
+          <option name="PATTERN" value="com.liukai.mapreduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,13 +142,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.com.liukai.mapreduce.WordCount" />
+      <item itemvalue="JUnit.MyHdfs.blocks" />
+      <item itemvalue="JUnit.MyHdfs.delete" />
+      <item itemvalue="JUnit.MyHdfs.mkdir" />
+      <item itemvalue="JUnit.MyHdfs.upload" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.liukai.mapreduce.WordCount" />
         <item itemvalue="JUnit.MyHdfs.delete" />
         <item itemvalue="JUnit.MyHdfs.upload" />
         <item itemvalue="JUnit.MyHdfs.mkdir" />
         <item itemvalue="JUnit.MyHdfs.blocks" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -178,8 +177,18 @@
       <workItem from="1652631210854" duration="1342000" />
       <workItem from="1652632593838" duration="681000" />
       <workItem from="1653117636245" duration="3406000" />
-      <workItem from="1653131990779" duration="1029000" />
+      <workItem from="1653131990779" duration="2592000" />
+      <workItem from="1653215215057" duration="2333000" />
+      <workItem from="1653792378876" duration="711000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: hdfs, mapreduce api 操作">
+      <created>1653188607453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653188607453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +221,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2-sources.jar!/org/apache/logging/log4j/spi/AbstractLogger.java</url>
           <line>1319</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
