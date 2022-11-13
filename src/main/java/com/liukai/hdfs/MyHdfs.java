@@ -45,7 +45,7 @@ public class MyHdfs {
     // 创建目录
     // Path path = new Path("/msh01");
     // Path path = new Path("/user/liukai/input");
-    Path path = new Path("/user/liukai/output");
+    Path path = new Path("/user/liukai/outputargs1");
     // Path path = new Path("/tmp");
     if (fs.exists(path)) {
       log.info("文件目录已经存在：{}", path);

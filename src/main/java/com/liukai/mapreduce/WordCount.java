@@ -83,9 +83,11 @@ public class WordCount {
     job.setOutputValueClass(IntWritable.class);
 
     // 输入目录：/user/liukai/
-    // 输出目录：
     FileInputFormat.addInputPath(job, new Path(remainingArgs[0]));
+
+    // 输出目录：
     FileOutputFormat.setOutputPath(job, new Path(remainingArgs[1]));
+
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
 
@@ -100,6 +102,7 @@ public class WordCount {
     private static final IntWritable one = new IntWritable(1);
     private Text word = new Text();
 
+    @Override
     public void map(Object key, Text value, Context context)
         throws IOException, InterruptedException {
       StringTokenizer itr = new StringTokenizer(value.toString());
@@ -114,6 +117,7 @@ public class WordCount {
   public static class IntSumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
     private IntWritable result = new IntWritable();
 
+    @Override
     public void reduce(Text key, Iterable<IntWritable> values, Context context)
         throws IOException, InterruptedException {
       int sum = 0;
