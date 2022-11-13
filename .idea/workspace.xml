@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0be1ba-6593-427c-add1-e4fc4caef0bc" name="Changes" comment="feat: hdfs, mapreduce api 操作">
-      <change afterPath="$PROJECT_DIR$/data/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dict.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/MyTopN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5d0be1ba-6593-427c-add1-e4fc4caef0bc" name="Changes" comment="feat: hdfs, mapreduce api 操作&#10;&#10;1、获取每个月份中温度最高的气温以及城市">
+      <change afterPath="$PROJECT_DIR$/data/fof.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/MyFof.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liukai/hdfs/MyHdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liukai/hdfs/MyHdfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/WordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +76,15 @@
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liukai.mapreduce" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MyTopN">
-    <configuration name="MyTopN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liukai.mapreduce.MyTopN" />
+  <component name="RunManager" selected="Application.MyFof">
+    <configuration name="MyFof" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liukai.mapreduce.MyFof" />
       <module name="mybigdata" />
-      <option name="PROGRAM_PARAMETERS" value="/data/topn/input /data/topn/join/output" />
+      <option name="PROGRAM_PARAMETERS" value="/data/fof/input /data/fof/output" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.liukai.mapreduce.*" />
@@ -96,18 +95,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHdfs.blocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTopN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liukai.mapreduce.MyTopN" />
       <module name="mybigdata" />
+      <option name="PROGRAM_PARAMETERS" value="/data/topn/input /data/topn/join/output" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liukai.hdfs.*" />
+          <option name="PATTERN" value="com.liukai.mapreduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.liukai.hdfs" />
-      <option name="MAIN_CLASS_NAME" value="com.liukai.hdfs.MyHdfs" />
-      <option name="METHOD_NAME" value="blocks" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,19 +158,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MyFof" />
       <item itemvalue="Application.MyTopN" />
-      <item itemvalue="JUnit.MyHdfs.blocks" />
       <item itemvalue="JUnit.MyHdfs.delete" />
       <item itemvalue="JUnit.MyHdfs.mkdir" />
       <item itemvalue="JUnit.MyHdfs.upload" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyFof" />
         <item itemvalue="Application.MyTopN" />
         <item itemvalue="JUnit.MyHdfs.upload" />
         <item itemvalue="JUnit.MyHdfs.mkdir" />
         <item itemvalue="JUnit.MyHdfs.delete" />
-        <item itemvalue="JUnit.MyHdfs.blocks" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +213,7 @@
       <workItem from="1661065075091" duration="5109000" />
       <workItem from="1667118864138" duration="4318000" />
       <workItem from="1667124244583" duration="6243000" />
-      <workItem from="1668343468483" duration="3410000" />
+      <workItem from="1668343468483" duration="7497000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hdfs, mapreduce api 操作">
       <created>1653188607453</created>
@@ -232,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653809597417</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: hdfs, mapreduce api 操作&#10;&#10;1、获取每个月份中温度最高的气温以及城市">
+      <created>1668353456539</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668353456539</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +255,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: hdfs, mapreduce api 操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: hdfs, mapreduce api 操作" />
+    <MESSAGE value="feat: hdfs, mapreduce api 操作&#10;&#10;1、获取每个月份中温度最高的气温以及城市" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: hdfs, mapreduce api 操作&#10;&#10;1、获取每个月份中温度最高的气温以及城市" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -270,16 +275,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/MyTopN.java</url>
           <line>167</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/MyTopN.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liukai/mapreduce/MyTopN.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
